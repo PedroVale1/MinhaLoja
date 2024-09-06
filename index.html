@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Minha Loja</title>
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+    <h1>Minha loja</h1>
+    <div id="carrinhoContainer">
+        <img src="https://cdn-icons-png.flaticon.com/512/1170/1170678.png" alt="Carrinho" id="iconeCarrinho" />
+        <span id="contadorCarrinho">0</span>
+    </div>
+    <section id="resultado"></section>
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <img id="modalImagem" src="" alt="Imagem do Produto" />
+            <h2 id="modalTitulo"></h2>
+            <p id="modalDescricao"></p>
+            <p id="modalPreco"></p>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
