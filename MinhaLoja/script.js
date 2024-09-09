@@ -111,7 +111,7 @@ window.onclick = function(event) {
 
 // Adicionar o evento de clique ao ícone do carrinho
 iconeCarrinho.addEventListener('click', () => {
-    window.location.href = '/MinhaLoja/carrinho.html'; // Redireciona para a página do carrinho
+    window.location.href = 'MinhaLoja/carrinho.html'; // Redireciona para a página do carrinho
 });
 
 // Carregar os produtos ao carregar a página
