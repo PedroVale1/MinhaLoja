@@ -13,7 +13,7 @@ async function adicionarAoCarrinho(produtoId) {
     try {
         const resposta = await fetch(`https://fakestoreapi.com/products/${produtoId}`);
         const produto = await resposta.json();
-        
+
         let carrinho = JSON.parse(localStorage.getItem('carrinho')) || [];
         const produtoExistente = carrinho.find(item => item.id === produto.id);
 
@@ -111,7 +111,7 @@ window.onclick = function(event) {
 
 // Adicionar o evento de clique ao ícone do carrinho
 iconeCarrinho.addEventListener('click', () => {
-    window.location.href = 'carrinho.html'; // Redireciona para a página do carrinho
+    window.location.href = '/MinhaLoja/carrinho.html'; // Redireciona para a página do carrinho
 });
 
 // Carregar os produtos ao carregar a página

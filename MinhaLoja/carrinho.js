@@ -5,7 +5,7 @@ const voltarProdutos = document.querySelector("#voltarProdutos");
 function exibirCarrinho() {
     try {
         const carrinho = JSON.parse(localStorage.getItem('carrinho')) || [];
-        
+
         while (resultadoCarrinho.firstChild) {
             resultadoCarrinho.removeChild(resultadoCarrinho.firstChild);
         }
@@ -69,7 +69,7 @@ function exibirCarrinho() {
 
 // Função para remover um item do carrinho
 function removerDoCarrinho(id) {
-    let carrinho = JSON.parse(localStorage.getItem('carrinho')) || [];
+    var carrinho = JSON.parse(localStorage.getItem('carrinho')) || [];
     carrinho = carrinho.filter(item => item.id !== id);
 
     localStorage.setItem('carrinho', JSON.stringify(carrinho));
@@ -79,7 +79,7 @@ function removerDoCarrinho(id) {
 
 // Adicionar o evento de clique ao botão de voltar para produtos
 voltarProdutos.addEventListener('click', () => {
-    window.location.href = 'index.html'; // Redireciona para a página principal
+    window.location.href = '../index.html'; // Redireciona para a página principal
 });
 
 // Carregar o carrinho ao carregar a página
